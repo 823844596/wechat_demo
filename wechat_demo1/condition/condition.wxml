@@ -1,0 +1,11 @@
+
+<view>这是微信小程序条件渲染demo</view>
+<view wx:if="{{condition === 1}}">
+  condition满足=1时执行
+</view>
+<view wx:elif="{{condition === 2}}">
+  condition === 2 时执行
+</view>
+<view wx:else>
+  condition不满足以上两个条件的时候执行代码
+</view>

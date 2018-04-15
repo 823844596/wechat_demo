@@ -1,0 +1,6 @@
+<template name="a">
+  this is template A
+</template>
+<template name="b">
+  this is template B!!!!!!
+</template>

@@ -1,0 +1,6 @@
+<!-- innclude 方式引用模版-->
+<template name='includeTemp'>
+  this is template
+</template>
+<view>哈哈 just for fun</view>
+<view>哈哈 又来一条</view>

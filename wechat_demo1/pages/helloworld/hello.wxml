@@ -1,2 +1,9 @@
 <!--pages/helloworld/hello.wxml-->
+<!-- 这是第一个搭建的hello world
+  一个微信小程序由四个文件组成：
+    X.wxml 页面配置
+    X.json 存放数据
+    X.wxss 页面样式
+    X.js 逻辑代码 生命周期等
+ -->
 <view>123123</view>

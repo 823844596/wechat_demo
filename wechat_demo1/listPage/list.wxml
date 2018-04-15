@@ -1,0 +1,8 @@
+<!-- 列表渲染，使用wx-for， wx-for-item, wx-key -->
+<view>
+  <block>
+    <view wx:for="{{items}}" wx-for-item="item" wx-key="index">
+      {{index}}:{{item.name}}
+    </view>
+  </block>
+</view>

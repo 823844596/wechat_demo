@@ -1,0 +1,6 @@
+view{
+  color: gray;
+}
+.warning{
+  color: red;
+}

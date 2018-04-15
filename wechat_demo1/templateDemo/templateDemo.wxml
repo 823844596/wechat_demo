@@ -1,0 +1,33 @@
+
+
+<view>
+  这是使用template标签创建模版demo
+  使用template标签创建模版，通过is属性指定模版
+</view>
+<template name="templateItem">
+  <view>
+    <view>收件人： {{name}}</view>
+    <view>联系方式：{{phone}}</view>
+    <view>地址：{{address}}</view>
+  </view>
+</template>
+<!-- 通过is属性指定使用哪个template， 模版有自己的作用域 -->
+<template is="templateItem" data="{{...item}}"></template>
+
+<view>
+  引入模版有两种方式：1.import； 2.include
+</view>
+
+<import src="importTemplate.wxml"></import>
+<view>使用import 方式引入模版</view>
+<template is="a"></template>
+
+<view>include方式</view>
+<include src="includeTemplate.wxml"></include>
+<template is="includeTemp"></template>
+
+<view class="warning">
+两种引用模板的方式：include和template
+区别：include只会引用除template内容外的内容，
+inport只会引用template内的的内容，动态的传入数据，is表示引用的模板名称，data表示传入模板的数据
+</view>
