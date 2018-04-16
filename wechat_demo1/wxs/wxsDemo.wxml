@@ -1,0 +1,25 @@
+<view>##################</view>
+<view class='wxsDefine'>wxs定义方式</view>
+<view>
+  1.wxs可以通过标签方式声明，使用wxs
+  2.wxs也可以通过文件方式声明；
+</view>
+
+<wxs module='m1'>
+  module.exports = {
+    message: '这是通过标签方式声明的！'
+  }
+</wxs>
+
+<view> 使用标签方式：{{m1.message}}</view>
+<view>******************************</view>
+<wxs src="./m2.wxs" module="m2"></wxs>
+<view>
+  使用文件方式:{{m2.message}}
+</view>
+<view>##############</view>
+<view class='comments'>wxs注释方式</view>
+注释方式有三种： 单行注释/多行注释/结尾注释：
+单行：//
+多行/**/
+结尾 code... /*

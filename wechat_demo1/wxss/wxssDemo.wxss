@@ -1,0 +1,4 @@
+@import './importWxss.wxss';
+.container{
+   border: 1px solid yellow; 
+}

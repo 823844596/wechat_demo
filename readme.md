@@ -108,8 +108,58 @@
     weixin style sheets， 是一套样式语言，用于描述wxml的组件样式
     wxss基于css的改动及补充：
         1）尺寸单位rpx，响应式单位
-        2）样式导入
-        3）内连样式
-        4）选择器
+        2）样式导入: 通过@import方式导入
+        3）内连样式: 使用style方式
+        4）选择器： 
+            .class： 类
+            #id： id
+            element： 标签
+            element.element
+            ::after
+            ::before
+        选择器优先级：!important（无穷大） > 内联（1000） > id选择权（100） > class选择器（10） > element选择器（1）
+    代码示例：wxss路径下
+    ps：wxss执行顺序从上到下，从左到右执行
+三：javascript
+    1.小程序js运行环境：
+        iOS：javascriptCore中运行，由webkitview渲染
+        android： X5 javascriptCore解析， x5内核渲染
+        小程序：nwjs中运行，chrome webview渲染， nwjs由nodejs及webkit组成
+    2.wxs： weixin script，查看wxs文件下代码
+        语言特性：模块/变量/注释/运算符/语句/数据类型/基础类库
+        模块：可通过标签声明/文件声明，由自己独立作用域
+        注释： 分为三种： 单行注释/ 多行注释/ 尾行注释
+        运算符：（与js相同）
+            等值运算符: 
+            赋值运算符： 
+            二元逻辑运算符
+            基本运算符： 加减乘除
+            一元运算符： 自增自减 赋值
+            位运算符
+            比较运算符
+        数据类型(8中）：number string boolean object array function date（getDate方式） regexp（getRegexp）
+            基础类库：Number
+                    Date（只有三种方法data。path/data。now/date。utc）
+                    console（只有console。log）
+                    Math
+                    Gloabl
+                    Json
+    3.MINA框架：
+        view层（试图层）
+        App Service层（逻辑层，只有一个，常驻内存）
+            Manager：
+            API：
+        Native层（系统层
+            微信客户端能力
+            能与逻辑层/视图层进行数据沟通
+            离线缓存
+            网络请求
+    4.运行机制：
+        启动：冷启动/热启动
+            热启动：用户已打开过小程序，一定时间内在打开时，不需重新启动，将后台小程序切换回来。
+            冷启动：用户首次打开或小程序被用户主动销毁在打开
+            销毁情况：1）一定时间内（5min）不会销毁，超过后自动销毁；2）小程序多时间连续收到系统告警，自动销毁（时间为5S）
+            更新机制：启动时发现新版本，会下载新版本，打开小程序时使用老版本，下次打开时会使用新版本，如果想强制使用新版本则需在程序中调用api
+
     
 </pre>

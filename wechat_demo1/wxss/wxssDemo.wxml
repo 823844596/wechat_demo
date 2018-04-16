@@ -1,0 +1,9 @@
+<!-- wxss 说明 -->
+<view class='container'>
+  1.外联样式，如@import ‘路径’
+    css 从上到下执行，下面的css会重置上面的css
+  2.内联样式 使用style方式在标签中使用
+</view>
+<view style="color: {{color}}">
+  使用style方式进行饮用wxss
+</view>

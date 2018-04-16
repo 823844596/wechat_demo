@@ -1,0 +1,6 @@
+.wxsDefine{
+  color: blue;
+}
+.comments{
+  color: green;
+}

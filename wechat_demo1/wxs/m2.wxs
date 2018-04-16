@@ -1,0 +1,4 @@
+/** 这里定义一个对象，供外部调用使用 */
+module.exports = {
+  message: 'wxs有自己独立的作用域，所以不会与上部分的message冲突'
+}
