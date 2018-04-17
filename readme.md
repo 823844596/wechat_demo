@@ -160,6 +160,37 @@
             冷启动：用户首次打开或小程序被用户主动销毁在打开
             销毁情况：1）一定时间内（5min）不会销毁，超过后自动销毁；2）小程序多时间连续收到系统告警，自动销毁（时间为5S）
             更新机制：启动时发现新版本，会下载新版本，打开小程序时使用老版本，下次打开时会使用新版本，如果想强制使用新版本则需在程序中调用api
+    5.加载机制：
+        1.第一次从cdn上请求代码包
+        2.客户端将代码包缓存到本地，第二次启动的时候，会校验当前版本，如果有新版本，则异步下载新的版本代码，供下次启动使用
+        3.小程序可访问web server接口交互数据
+    6.小程序生命周期
+        生命周期分为两部分：程序生命周期、页面声明周期
+        1）程序声明周期：onLaunch：第一次进入小程序，客户端初始化小程序运行环境，微信客户端逻辑层派发，触发该事件
+                      onShow：在进入小程序时，将后台小程序唤醒，调用onShow方法
+                      onHide：按住手机home键，小程序转到后台，此时出发onHide
+                      onError： 脚本错误或api错误触发
+                      ps： globalData表示生命周期中使用的数据
+        2）页面声明周期：onLoad：页面初次加载，逻辑层会派发一个实例，此时调用onLoad方法，页面未被销毁时，只会调用一次
+                      onShow：触发时机：1.同上触发情况；2.别的页面返回当前页面触发
+                      onReady：页面初次渲染完后，调用该方法，在onshow后调用，页面未销毁时，只会调用一次
+                      onHide：当前页面打开新的页面时，当前页面会触发当前页面的onhide方法
+                      onUnLoad：关闭页面触发
+                      ps:data表示当前页面配置数据
+    7.页面路由
+        路由分为六种：
+            1）初始化： 新页面入栈，路由后触发方法：onLoad， onShow
+            2）打开新页面： 新页面入栈，页面前路由触发方法：onHide， 路由后页面触发方法： onLoad，onShow
+            3）页面重定向：当前页面出栈，新页面入栈。 路由前页面出发方法：onUnload， 路由后页面触发：onLoad，onShow
+            4）页面返回： 页面不断出栈，知道目标反悔页，新页面入栈。 路由前页面触发方法： onUnload，路由后页面触发方法：onShow
+            5）Tab切换： 页面全部出栈，只留下新的Tab页面，
+            6）重加载：页面全部出栈，只留下新的页面，触发方法： 路由前页面触发方法： onUnload， 路由后页面触发方法： onLoad， onShow
 
-    
+    8.事件流
+        1）事件模型：事件捕获阶段->事件处理阶段->事件冒泡阶段
+        2）可捕获事件： touchstart、 touchmove、tap\touchcancel、 touchend、 logngpress、 longtap
+        3) 可冒泡事件：touchstart、touchmove、touchcancel、touchend、tap、longpress、longup、transitionend、animationstart、
+        animationiteration、animationend、touchforcechange
+
+
 </pre>

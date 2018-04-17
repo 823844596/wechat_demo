@@ -1,0 +1,17 @@
+<!-- 小程序事件api https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html -->
+<view bindtap="clickMe">
+  小程序事件: 手指触摸后马上离开
+</view>
+<view>*******************</view>
+<view>事件冒泡 + 捕获demo</view>
+
+<view bindtap="clickA" class='container-A'>
+  container-A
+  <view bindtap="clickB" capture-bind:tap="captureClickB" class='container-B'>
+    container-B
+    <view bindtap="clickC" capture-catch:tap="captureCactchClickC" class='container-C'>
+      container-C
+    </view>
+  </view>
+</view>
+<view class="tips">需要在捕获阶段监听事件时，可以采用capture-bind、capture-catch关键字，后者将中断捕获阶段和取消冒泡阶段。</view>
