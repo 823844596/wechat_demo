@@ -1,0 +1,10 @@
+@import '../common/common.wxss';
+
+.scroll-item-view{
+  width: 600rpx;
+  margin: 0 auto;
+  height: 200px;
+}
+.scroll-item-view .bc_green{
+  background-color: green;
+}

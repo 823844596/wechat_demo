@@ -1,0 +1,21 @@
+<view class='section'>
+  <view>view组件</view>
+  <view class='view-parent-container' hover-class='hover-parent-container'>
+    这是父容器
+    <view class='view-child-container'
+      hover-class='hover-child-container'
+      hover-stop-propagation='true'
+      hover-start-time='500'
+      hover-stay-time='300'>
+      这是子容器
+      
+    </view>
+  </view>
+  <view>
+  hover-stay-time	手指松开后点击态保留时间，单位毫秒
+  hover-start-time	按住后多久出现点击态，单位毫秒
+  hover-stop-propagation	指定是否阻止本节点的祖先节点出现点击态
+  hover-class	String	指定按下去的样式类。当 hover-class="none" 时，没有点击态效果
+  </view>
+
+</view>

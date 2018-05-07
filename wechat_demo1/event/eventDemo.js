@@ -15,6 +15,6 @@ Page({
     console.log('捕获事件')
   },
   captureCactchClickC(e) {
-    console.log('取消冒泡/捕获事件)
+    console.log('取消冒泡/捕获事件');
   }
 })

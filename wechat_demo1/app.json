@@ -1,6 +1,6 @@
 {
   "pages": [
-    "event/eventDemo"
+    "viewComponent/scroll-view/scrollView"
   ]
 }
 

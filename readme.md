@@ -191,6 +191,19 @@
         2）可捕获事件： touchstart、 touchmove、tap\touchcancel、 touchend、 logngpress、 longtap
         3) 可冒泡事件：touchstart、touchmove、touchcancel、touchend、tap、longpress、longup、transitionend、animationstart、
         animationiteration、animationend、touchforcechange
-
+    9.组件：组件api地址：https://developers.weixin.qq.com/miniprogram/dev/component/
+        1.媒体：
+        2.地图：
+        3.开发能力：
+        4.画布：
+        5.视图容器：
+            view:视图容器
+            scroll-view:可滚动视图区域
+            swiper: 滑块视图容器
+            movable-view: 可缩放区域
+            cover-view: 覆盖在原生组件之上的文本视图，可覆盖的原生组件包括map、video、canvas、camera，只支持嵌套cover-view、   cover-image
+        6.基础内容：
+        7.表单组件：
+        8.导航：
 
 </pre>

@@ -1,0 +1,18 @@
+<view>
+  <view class='section_title'>竖向滚动</view>
+  <scroll-view style='height: 200px'
+    scroll-y
+    bindscroll='scroll'
+    scroll-into-view="{{toview}}"
+    bindscrolltouper='uper'
+    bindscrolltolower='lower'
+    scroll-top='{{scrollTop}}'
+    enable-back-to-top='true'
+    scroll-with-animation='true'
+  >
+    <view id='green' class='scroll-view-item bc_green'></view>
+    <view id='red' class='scroll-view-item bc_red'></view>
+    <view id='yellow' class='scroll-view-item bc_yellow'></view>
+    <view id='blue' class='scroll-view-item bc_blue'></view>
+  </scroll-view>
+</view>
