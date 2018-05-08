@@ -2,3 +2,7 @@
     width: 750rpx;
     text-align: center;
 }
+.api{
+  color: blue;
+  word-break: break-all;
+}

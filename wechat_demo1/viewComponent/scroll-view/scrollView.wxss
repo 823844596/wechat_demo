@@ -5,6 +5,27 @@
   margin: 0 auto;
   height: 200px;
 }
-.scroll-item-view .bc_green{
+.scroll-item-view.bc_green,
+.scroll-view-item_H.bc_green{
   background-color: green;
+}
+.scroll-item-view.bc_red, .scroll-view-item_H.bc_red{
+  background-color: red;
+}
+.scroll-item-view.bc_yellow, .scroll-view-item_H.bc_yellow{
+  background-color: yellow;
+}
+.scroll-item-view.bc_blue, .scroll-view-item_H.bc_blue{
+  background-color: blue;
+}
+
+.scroll-view_H{
+  height: 200px;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+.scroll-view-item_H{
+  height: 200px;
+  width: 100%;
+  display: inline-block;
 }
