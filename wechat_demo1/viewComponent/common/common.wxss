@@ -6,3 +6,6 @@
   color: blue;
   word-break: break-all;
 }
+.section{
+  margin: 5px auto;
+}
