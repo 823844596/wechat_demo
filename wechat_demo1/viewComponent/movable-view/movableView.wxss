@@ -1,0 +1,9 @@
+@import '../common/common.wxss';
+
+.api{
+  margin: 20rpx 0px;
+}
+.btn-area{
+  width: 590rpx;
+  margin: 12rpx auto 0;
+}

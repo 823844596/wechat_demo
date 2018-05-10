@@ -1,6 +1,6 @@
 {
   "pages": [
-    "viewComponent/swiper/swiper"
+    "viewComponent/movable-view/movableView"
   ]
 }
 
