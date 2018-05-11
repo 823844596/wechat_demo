@@ -203,6 +203,10 @@
             movable-view: 可缩放区域
             cover-view: 覆盖在原生组件之上的文本视图，可覆盖的原生组件包括map、video、canvas、camera，只支持嵌套cover-view、   cover-image
         6.基础内容：
+           icon: 图标组件
+           text: 文本组件
+           rich-text: 富文本组件
+           progress: 进度条组件
         7.表单组件：
         8.导航：
 
