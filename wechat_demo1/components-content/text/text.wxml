@@ -1,0 +1,9 @@
+<view style='margin-bottom: 20px'>文本组件</view>
+
+<view style='color: blue; margin-bottom: 20px'>
+  <text selectable="true">{{selectableData}}</text>
+  
+</view>
+<view>
+  <text decode='true'>{{spaceData}}</text>
+</view>
