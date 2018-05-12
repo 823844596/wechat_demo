@@ -1,0 +1,29 @@
+<view class='title'>progress进度条</view>
+
+<view class='block'>
+  <progress percent='20' show-info=''></progress>
+</view>
+
+<view class='block'>
+  <progress percent='40' stroke-width='30'></progress>
+</view>
+
+<view class='block'>
+  <progress percent='60' color='red'></progress>
+</view>
+
+<view class='block'>
+  <progress percent='80' active></progress>
+</view>
+
+<view class='block'>
+  <progress percent='50' activeColor='green' backgroundColor='gray'></progress>
+</view>
+
+<view class='block'>
+  <progress percent='{{percent}}' show-info active active-mode='forwards'></progress>
+</view>
+
+<view class='tips'>
+backwards: 动画从头播；forwards：动画从上次结束点接着播
+</view>

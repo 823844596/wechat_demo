@@ -1,0 +1,11 @@
+.title{
+  color:  blue;
+  margin-bottom: 20px;
+}
+
+.block{
+  margin-bottom: 20px;
+}
+.tips{
+  color:  red;
+}
