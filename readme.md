@@ -208,6 +208,17 @@
            rich-text: 富文本组件
            progress: 进度条组件
         7.表单组件：
+            1.button: 按钮
+            2.checkbox： 多选框
+            3.form
+            4.input
+            5.label
+            6.picker：主动触发弹起的控件
+            7.picker-view： 嵌套
+            8.radio
+            9.slider
+            10.switch
+            11.textarea
         8.导航：
 
 </pre>
