@@ -1,0 +1,9 @@
+@import '../../common/common.wxss';
+.title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.checkbox{
+  margin-right: 20rpx;
+}
