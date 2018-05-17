@@ -55,5 +55,34 @@
         </view>
       </view> 
     </view>
+
+
+    <view class='page-section'>
+        <view class='weui-cells_title'>number</view>
+        <view class='weui-cells weui-cells_after-title'>
+          <view class='weui-cell weui-cell_input'>
+            <input class='weui-input' type='number'/>
+          </view>
+        </view> 
+    </view>
+
+    <view class='page-section'>
+        <view class='weui-cells_title'>身份证类型</view>
+        <view class='weui-cells weui-cells_after-title'>
+          <view class='weui-cell weui-cell_input'>
+            <input class='weui-input' type='idcard'/>
+          </view>
+        </view> 
+    </view>
+
+
+    <view class='page-section'>
+        <view class='weui-cells_title'>右下角文字</view>
+        <view class='weui-cells weui-cells_after-title'>
+          <view class='weui-cell weui-cell_input'>
+            <input class='weui-input' confirm-type='send'/>
+          </view>
+        </view> 
+    </view>
   </view>
 </view>
