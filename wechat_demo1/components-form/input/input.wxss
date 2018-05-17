@@ -1,0 +1,9 @@
+@import '../../common/common.wxss';
+
+.page-section{
+  margin-bottom: 20rpx;
+}
+
+.placeHolder{
+  color: red;
+}

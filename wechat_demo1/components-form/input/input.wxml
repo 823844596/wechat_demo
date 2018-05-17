@@ -1,0 +1,59 @@
+<view class='title'>input</view>
+
+<view class='container'>
+  <view class='page-body'>
+
+    <view class='page-section'>
+      <view class='weui-cells__title'>可以自动聚焦的input</view>
+      <view class='weui-celss weui-cells_input'>
+        <input class='weui-input' auto-focus placeholder='将会获取焦点' />
+      </view>
+    </view>
+
+    <view class='page-section'>
+      <view class='weui-cells__title'>控制最大输入长度的input</view>
+      <view class='weui-cells weui-cells_after-title'>
+        <view class='weui-cell weui-cell_input'>
+          <input class='weui-input' maxlength='10' placeholder='最大输入长度为10' />
+        </view>
+      </view>  
+    </view>
+
+    <view class='page-section'>
+      <view class='weui-cells__title'>实时获取输入的值{{inputValue}}</view>
+      <view class='weui-cells weui-cells_after-title'>
+        <view class='weui-cell weui_input'>
+          <input class='weui-input' maxlength='10' bindinput='bindKeyInput' placeholder='输入同步到view中' />
+        </view>
+      </view>
+    </view>
+
+    <view class='page-section'>
+      <view class='weui-cells__title'>控制输入的input</view>
+      <view class='weui-cells weui-cells_after-title'>
+        <view class='weui-cell weui-cell_input'>
+          <input class='weui-input' bindinput='bindReplaceInput' placeholder='连续输入两个1会变2' />
+        </view>
+      </view>
+    </view>
+
+    <view class='page-section'>
+      <view class='weui-cells__title'>
+        <view class='weui-cells weui-cells_after-title'>
+          <view class='weui-input weui-cell_input'>
+            <input class='weui-input' bindinput='bindHideKeyboard' placeholder='输入123自动收起键盘' />
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='page-section'>
+      <view class='weui-cells_title'>控制占位符颜色的input</view>
+      <view class='weui-cells weui-cells_after-title'>
+        <view class='weui-cell weui-cell_input'>
+          <input class='weui-input' placeholder='占位符' placeholder-class='placeHolder' />
+        </view>
+      </view> 
+    </view>
+  </view>
+</view>
