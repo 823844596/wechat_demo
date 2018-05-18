@@ -1,0 +1,12 @@
+@import '../../common/common.wxss';
+
+.title{
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.picker{
+  padding: 19rpx 26rpx;
+  background-color: #fff;
+  border: 1px solid red;
+}
