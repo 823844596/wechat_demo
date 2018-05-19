@@ -1,6 +1,6 @@
 {
   "pages": [
-    "components-form/picker/picker"
+    "components-form/picker-view/pickerView"
   ]
 }
 
