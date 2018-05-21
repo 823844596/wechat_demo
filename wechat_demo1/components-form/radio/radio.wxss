@@ -1,0 +1,7 @@
+/* components-form/radio/radio.wxss */
+
+@import '../../common/common.wxss';
+
+.radio{
+  margin-right: 20rpx;
+}
