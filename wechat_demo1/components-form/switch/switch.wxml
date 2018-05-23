@@ -1,0 +1,27 @@
+<view class='title'>switch开关选择器</view>
+
+<view class='container'>
+  <view class='page-body'>
+    <view class='page-section page-section-gap'>
+      <view class='body-view'>
+        <switch
+          checked
+          type='checkbox'
+          color='red'
+          bindchange='switchChange'
+        />
+        type='checkbox'
+      </view>
+    </view>
+
+    <view class='page-section page-section-gap'>
+      <view class='body-view'>
+        <switch
+          checked
+          type='switch'
+          color='yellow'
+        />
+      </view>
+    </view>
+  </view>
+</view>

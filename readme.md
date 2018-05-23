@@ -220,5 +220,6 @@
             10.switch
             11.textarea
         8.导航：
+            navigator
 
 </pre>

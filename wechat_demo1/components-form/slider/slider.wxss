@@ -1,0 +1,6 @@
+
+@import '../../common/common.wxss';
+
+.title{
+  margin-bottom: 12rpx;
+}

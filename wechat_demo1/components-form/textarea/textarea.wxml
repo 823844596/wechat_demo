@@ -1,0 +1,19 @@
+<view>多行输入框textarea</view>
+
+<view class='container'>
+  <view class='page-body'>
+    <view class='page-section'>
+      <view class='textarea-wrp'>
+        <textarea
+          focus='{{focus}}'
+          cursor='50'
+          bindblur='bindTextAreaBlur'
+          auto-height
+          adjust-position='true'
+          cursor-spacing='50'
+          maxlength='1000'
+        />
+      </view>
+    </view>
+  </view>
+</view>
