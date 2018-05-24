@@ -1,21 +1,5 @@
 {
   "pages": [
-    "component-navigator/pages/pageA/navigator",
-    "component-navigator/pages/pageB/navigate",
-    "component-navigator/pages/pageC/redirect",
-    "component-navigator/pages/pageD/pageD"
-  ],
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "component-navigator/pages/pageA/navigator",
-        "text": "页面A"
-      },
-      {
-        "pagePath": "component-navigator/pages/pageD/pageD",
-        "text": "页面D"
-      }
-    ]
-  }
+    "components-media/audio/audio"
+  ]
 }
-
