@@ -1,0 +1,22 @@
+<view class='container'>
+  <view class='page-body'>
+    <view class='page-section-title'>center</view>
+    <view class='page-section-ctn'>
+      <image
+        class='image'
+        bindload='loadImage'
+        binderror='loadError'
+        src='http://img.zcool.cn/community/0142135541fe180000019ae9b8cf86.jpg@1280w_1l_2o_100sh.png'
+        mode='center' />
+    </view>
+
+    <view class='title'>aspectFit:保持纵横比缩放图片，使图片的长边能完全显示出来。也就是说，可以完整地将图片显示出来</view>
+    <view class='page-section-ctn'>
+      <image
+        class='image'
+        bindload='loadImage'
+        src='http://img.zcool.cn/community/0142135541fe180000019ae9b8cf86.jpg@1280w_1l_2o_100sh.png'
+        mode='aspectFit' />
+    </view>
+  </view>
+</view>
