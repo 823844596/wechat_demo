@@ -1,0 +1,9 @@
+<live-player src='https://domain/pull_stream'
+  mode='RTC'
+  autoplay
+  bindstatechange='stateChange'
+  binderror='error'
+  style='width: 300px; height: 225px'
+  bindnetstatus='netStatus'
+>
+</live-player>
