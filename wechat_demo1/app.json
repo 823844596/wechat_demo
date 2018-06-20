@@ -1,5 +1,5 @@
 {
   "pages": [
-    "components-map/pages/map"
+    "components-canvas/pages/canvas"
   ]
 }
